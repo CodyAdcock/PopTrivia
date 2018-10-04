@@ -12,11 +12,20 @@ class QuestionController{
     static let shared = QuestionController()
     private init (){}
     
-    var questionBank: [Question] = []
+    var Genres: [Genre] = []
     
-    func createQuestion(questionText: String, correctAnswer: Bool, topic: String, genre: String){
-        let newQuestion = Question(questionText: questionText, correctAnswer: correctAnswer, topic: topic, genre: genre)
-        questionBank.append(newQuestion)
+    func createQuestion(questionText: String, correctAnswer: Bool, topic: Topic){
+        let newQuestion = Question(questionText: questionText, correctAnswer: correctAnswer)
+        
+        topic.questions.append(newQuestion)
+    }
+    func createTopic(name: String, genre: Genre){
+        let topic = Topic(name: name)
+        genre.topics.append(topic)
+    }
+    func createGenre(name: String){
+        let genre = Genre(name: name)
+        Genres.append(genre)
     }
     
 }

@@ -11,13 +11,9 @@ import Foundation
 class Question {
     let questionText: String
     let correctAnswer: Bool
-    let topic: String
-    let genre: String
     
-    init(questionText: String, correctAnswer: Bool, topic: String, genre: String){
+    init(questionText: String, correctAnswer: Bool){
         self.questionText = questionText
         self.correctAnswer = correctAnswer
-        self.topic = topic
-        self.genre = genre
     }
 }
