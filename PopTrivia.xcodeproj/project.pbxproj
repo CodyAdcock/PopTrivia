@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45FB337E2166A71D0000305E /* GenresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB337D2166A71D0000305E /* GenresVC.swift */; };
+		45FEA87E216693000000C2DD /* TopicsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA87D216693000000C2DD /* TopicsTableVC.swift */; };
+		45FEA880216696920000C2DD /* Colors+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FEA87F216696920000C2DD /* Colors+Extension.swift */; };
 		C317D06221668D8500A7B5B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317D06121668D8500A7B5B2 /* AppDelegate.swift */; };
-		C317D06421668D8500A7B5B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317D06321668D8500A7B5B2 /* ViewController.swift */; };
 		C317D06721668D8500A7B5B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C317D06521668D8500A7B5B2 /* Main.storyboard */; };
 		C317D06921668D8900A7B5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C317D06821668D8900A7B5B2 /* Assets.xcassets */; };
 		C317D06C21668D8900A7B5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C317D06A21668D8900A7B5B2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45FB337D2166A71D0000305E /* GenresVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresVC.swift; sourceTree = "<group>"; };
+		45FEA87D216693000000C2DD /* TopicsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsTableVC.swift; sourceTree = "<group>"; };
+		45FEA87F216696920000C2DD /* Colors+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Colors+Extension.swift"; sourceTree = "<group>"; };
 		C317D05E21668D8500A7B5B2 /* PopTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C317D06121668D8500A7B5B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C317D06321668D8500A7B5B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C317D06621668D8500A7B5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C317D06821668D8900A7B5B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C317D06B21668D8900A7B5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45FB337F2166A7290000305E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				45FB337D2166A71D0000305E /* GenresVC.swift */,
+				45FEA87D216693000000C2DD /* TopicsTableVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		45FB33802166A7420000305E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				45FEA87F216696920000C2DD /* Colors+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C317D05521668D8400A7B5B2 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +76,12 @@
 			isa = PBXGroup;
 			children = (
 				C317D06121668D8500A7B5B2 /* AppDelegate.swift */,
-				C317D06321668D8500A7B5B2 /* ViewController.swift */,
 				C317D06521668D8500A7B5B2 /* Main.storyboard */,
 				C317D06821668D8900A7B5B2 /* Assets.xcassets */,
 				C317D06A21668D8900A7B5B2 /* LaunchScreen.storyboard */,
 				C317D06D21668D8900A7B5B2 /* Info.plist */,
+				45FB337F2166A7290000305E /* ViewControllers */,
+				45FB33802166A7420000305E /* Extensions */,
 			);
 			path = PopTrivia;
 			sourceTree = "<group>";
@@ -135,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C317D06421668D8500A7B5B2 /* ViewController.swift in Sources */,
+				45FEA87E216693000000C2DD /* TopicsTableVC.swift in Sources */,
 				C317D06221668D8500A7B5B2 /* AppDelegate.swift in Sources */,
+				45FB337E2166A71D0000305E /* GenresVC.swift in Sources */,
+				45FEA880216696920000C2DD /* Colors+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
