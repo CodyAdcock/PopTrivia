@@ -56,7 +56,8 @@
 				45FEA87D216693000000C2DD /* TopicsTableVC.swift */,
 				45FB33842166AEC80000305E /* QuizVC.swift */,
 			);
-			path = ViewControllers;
+			name = ViewControllers;
+			path = ../ViewControllers;
 			sourceTree = "<group>";
 		};
 		45FB33802166A7420000305E /* Extensions */ = {
@@ -64,7 +65,8 @@
 			children = (
 				45FEA87F216696920000C2DD /* Colors+Extension.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
+			path = ../Extensions;
 			sourceTree = "<group>";
 		};
 		45FB33832166AE070000305E /* Views */ = {
@@ -72,7 +74,8 @@
 			children = (
 				45FB33812166AE020000305E /* RoundButtonView.swift */,
 			);
-			path = Views;
+			name = Views;
+			path = ../Views;
 			sourceTree = "<group>";
 		};
 		C317D05521668D8400A7B5B2 = {
