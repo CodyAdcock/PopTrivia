@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C317D06221668D8500A7B5B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317D06121668D8500A7B5B2 /* AppDelegate.swift */; };
-		C317D06421668D8500A7B5B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317D06321668D8500A7B5B2 /* ViewController.swift */; };
 		C317D06721668D8500A7B5B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C317D06521668D8500A7B5B2 /* Main.storyboard */; };
 		C317D06921668D8900A7B5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C317D06821668D8900A7B5B2 /* Assets.xcassets */; };
 		C317D06C21668D8900A7B5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C317D06A21668D8900A7B5B2 /* LaunchScreen.storyboard */; };
+		C317D0762166912A00A7B5B2 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317D0752166912A00A7B5B2 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C317D05E21668D8500A7B5B2 /* PopTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C317D06121668D8500A7B5B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C317D06321668D8500A7B5B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C317D06621668D8500A7B5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C317D06821668D8900A7B5B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C317D06B21668D8900A7B5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C317D06D21668D8900A7B5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C317D0752166912A00A7B5B2 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,30 @@
 		C317D06021668D8500A7B5B2 /* PopTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				C317D0742166911500A7B5B2 /* Model */,
+				C317D073216690FA00A7B5B2 /* Resources */,
+			);
+			path = PopTrivia;
+			sourceTree = "<group>";
+		};
+		C317D073216690FA00A7B5B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				C317D06121668D8500A7B5B2 /* AppDelegate.swift */,
-				C317D06321668D8500A7B5B2 /* ViewController.swift */,
 				C317D06521668D8500A7B5B2 /* Main.storyboard */,
 				C317D06821668D8900A7B5B2 /* Assets.xcassets */,
 				C317D06A21668D8900A7B5B2 /* LaunchScreen.storyboard */,
 				C317D06D21668D8900A7B5B2 /* Info.plist */,
 			);
-			path = PopTrivia;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C317D0742166911500A7B5B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C317D0752166912A00A7B5B2 /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C317D06421668D8500A7B5B2 /* ViewController.swift in Sources */,
 				C317D06221668D8500A7B5B2 /* AppDelegate.swift in Sources */,
+				C317D0762166912A00A7B5B2 /* Question.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = PopTrivia/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PopTrivia/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = PopTrivia/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PopTrivia/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
