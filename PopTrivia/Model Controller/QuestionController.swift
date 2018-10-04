@@ -20,3 +20,34 @@ class QuestionController{
     }
     
 }
+
+extension QuestionController{
+    
+    
+    
+}
+
+struct Constants {
+    //Genres
+    let genreMovies = "Movies"
+    let genreCelebrities = "Celebrities"
+    let genreSports = "Sports"
+    let genreWorld = "World"
+    //Topics - Movies
+    let topicMarvel = "Marvel"
+    let topicDC = "DC"
+    let topicHarryPotter = "Harry Potter"
+    let topLordOfRings = "Lord Of The Rings"
+    //Topics - Celebrities
+    let topicFemaleCeleb = "Female Celebrity"
+    let topicMaleCeleb = "Male Celebrity"
+    //Topics - Sports
+    let topicNFL = "NFL"
+    let topicCollegeFootball = "College Football"
+    let topicSoccer = "Soccer"
+    let topicBaseball = "Baseball"
+    //Topics - World
+    let topicAnimals = "Animals"
+    let topicCountries = "Countries"
+    let topicLandmark = "Landmark"
+}
